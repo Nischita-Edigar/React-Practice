@@ -1,5 +1,5 @@
 # React-Practice
-starting with bascis of reactjs
+starting with basics of reactjs
 
 
 
