@@ -3,4 +3,4 @@ starting with basics of reactjs
 
 
 
-click react-practice > src 
+Path   --   "react-practice > src" 
