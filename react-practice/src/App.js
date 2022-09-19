@@ -8,6 +8,7 @@ import ComponentA from './props/FtoF/ComponentA'
 import ComponentC from './props/CtoC/ComponentC'
 import ComponentE from './props/CtoF/ComponentE'
 import ComponentG from './props/FtoC/ComponentG'
+import Change from './states/Change'
 
 let App=()=>{
     return <div>
@@ -28,6 +29,8 @@ let App=()=>{
     <ComponentE/>
     <h1>Props-Function to Class</h1>
     <ComponentG/>
+    <h1>React--States</h1>
+    <Change/>
     
 
 
