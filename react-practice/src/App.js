@@ -11,6 +11,7 @@ import ComponentG from './props/FtoC/ComponentG'
 import Change from './states/Change'
 import Counter from './states/Counter'
 import Cart from './states/Cart'
+import Binding from './EventBinding/Binding'
 
 let App=()=>{
     return <div>
@@ -36,7 +37,9 @@ let App=()=>{
     <h1>React -- State Example2</h1>
     <Counter/><hr></hr>
     <h1>Cart -- Quantity Example</h1>
-    <Cart/>
+    <Cart/><hr></hr>
+    <h1>Event Binding</h1>
+    <Binding/><hr></hr>
     
 
 
