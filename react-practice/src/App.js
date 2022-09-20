@@ -9,6 +9,8 @@ import ComponentC from './props/CtoC/ComponentC'
 import ComponentE from './props/CtoF/ComponentE'
 import ComponentG from './props/FtoC/ComponentG'
 import Change from './states/Change'
+import Counter from './states/Counter'
+import Cart from './states/Cart'
 
 let App=()=>{
     return <div>
@@ -24,13 +26,17 @@ let App=()=>{
     <h1>Props-Function to function</h1>
     <ComponentA/><hr></hr>
     <h1>Props-Class to class</h1>
-    <ComponentC/>
+    <ComponentC/><hr></hr>
     <h1>Props-Class to Function</h1>
-    <ComponentE/>
+    <ComponentE/><hr></hr>
     <h1>Props-Function to Class</h1>
-    <ComponentG/>
-    <h1>React--States</h1>
-    <Change/>
+    <ComponentG/><hr></hr>
+    <h1>React -- State Example1</h1>
+    <Change/><hr></hr>
+    <h1>React -- State Example2</h1>
+    <Counter/><hr></hr>
+    <h1>Cart -- Quantity Example</h1>
+    <Cart/>
     
 
 
