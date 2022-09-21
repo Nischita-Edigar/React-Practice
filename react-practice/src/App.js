@@ -12,6 +12,8 @@ import Change from './states/Change'
 import Counter from './states/Counter'
 import Cart from './states/Cart'
 import Binding from './EventBinding/Binding'
+import Form from './FormHandling/Form'
+import Registration from './FormHandling/Registration'
 
 let App=()=>{
     return <div>
@@ -40,6 +42,11 @@ let App=()=>{
     <Cart/><hr></hr>
     <h1>Event Binding</h1>
     <Binding/><hr></hr>
+    <h1>Form Handling</h1>
+    <Form/><hr></hr>
+    <h1>Registration Form</h1>
+    <Registration/>
+
     
 
 
