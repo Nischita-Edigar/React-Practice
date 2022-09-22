@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 export class Registration extends Component {
-    state={Name:"",number:"",email:"",password:"",state:""}
+    state={Name:"",number:"",email:"",password:"",state:"",gender: ""}
     updateHandler=(event)=>{
         this.setState({[event.target.name]:event.target.value})
     }
@@ -20,13 +20,20 @@ export class Registration extends Component {
                        <input onChange={this.updateHandler}  type="text" className="form-control" placeholder="Enter Your Name" name='Name'></input>
                      </div>
                      <div className=" form-group">
-                       <input onChange={this.updateHandler}  type="number" className="form-control" placeholder="Enter your Mobile Number" name='number'></input>
+                       <input onChange={this.updateHandler}  type="number"  minLength='10' maxLength='10' className="form-control" placeholder="Enter your Mobile Number" name='number'></input>
                      </div>
                     <div className=" form-group">
                          <input onChange={this.updateHandler}   type="email" className="form-control" placeholder="Enter Email Id" name='email'></input>
                      </div>
+                     <div className='form-group'>
+                      <label>Gender : </label>&nbsp;&nbsp;
+                    
+                       <input onChange={this.updateHandler}  type="radio"   name='gender' value='Female' />Female  &nbsp;&nbsp;
+                        <input onChange={this.updateHandler}  type="radio"  name='gender' value='Male' />Male  &nbsp;&nbsp;
+                        <input onChange={this.updateHandler}  type="radio"  name='gender' value='Others' />Others  &nbsp;&nbsp;
+                        </div>
                      <div className=" form-group">
-                       <input   type="password" className="form-control" placeholder="Enter Password"></input>
+                       <input   type="password" className="form-control" placeholder="Enter Password"/>
                      </div>
                      <div className=" form-group">
                        <input onChange={this.updateHandler}  type="password" className="form-control" placeholder="Confirm Password" name='password'></input>
