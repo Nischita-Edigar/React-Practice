@@ -18,7 +18,9 @@ class Form extends React.Component{
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
+                        
                     <form onSubmit={this.submitHandler}> 
+                    <h3 className="text-center">Login Form</h3>
                     <div className=" form-group">
                          <input onChange={this.emailHandler}   type="email" className="form-control" placeholder="Enter Email Id"></input>
                      </div>

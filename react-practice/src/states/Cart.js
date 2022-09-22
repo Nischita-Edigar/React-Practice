@@ -1,4 +1,4 @@
-import { isDisabled } from "@testing-library/user-event/dist/utils";
+
 import React from "react";
 class Cart extends React.Component{
     state={Name:"Adiscend M Running Shoes For Men  (Black)",
@@ -9,7 +9,7 @@ class Cart extends React.Component{
         this.setState({qty:this.state.qty+1})
     }
     minushandler=()=>{
-        if(this.state.qty==0){
+        if(this.state.qty===0){
             this.setState({qty:0})
             alert("Quantity cant be negative")
         }
@@ -25,16 +25,20 @@ class Cart extends React.Component{
                 <div className="col">
                     <table  className="table  p-5 table-hover ">
                         <thead className="bg-primary">
-                            <td >Product Name</td>
-                            <td>Product Image</td>
-                            <td>Product Quantity</td>
-                            <td>Product Price</td>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Product Image</th>
+                                <th>Product Quantity</th>
+                                <th>Product Price</th>
+
+                            </tr>
+                            
                         </thead>
                         
                         <tbody>
                             <tr>
                                 <td>{this.state.Name}</td>
-                                <td><img src={this.state.image}  height="200" width="300"></img></td>
+                                <td><img src={this.state.image} alt="shoes" height="200" width="300"></img></td>
                                 <td><button  className="btn "onClick={this.minushandler}>&minus;</button>&nbsp;{this.state.qty}&nbsp;<button onClick={this.plushandler} className="btn ">+</button></td>
                                 <td>{this.state.price*this.state.qty}</td>
                             </tr>

@@ -15,7 +15,8 @@ export class Registration extends Component {
                 <div className="row">
                     <pre>{JSON.stringify(this.state)}</pre>
                     <div className="col-md-4">
-                    <form onSubmit={this.submitHandler}> 
+                      <form onSubmit={this.submitHandler}> 
+                      <h3 className='text-center'>Registration Form</h3>
                     <div className=" form-group">
                        <input onChange={this.updateHandler}  type="text" className="form-control" placeholder="Enter Your Name" name='Name'></input>
                      </div>
@@ -50,10 +51,14 @@ export class Registration extends Component {
                      </div>    
                     </form>
                     </div>
-                </div>
-            </div>
+                    </div>
+                    </div>
+                    </div>
+                
+            
+            
         
-      </div>
+     
     )
   }
 }
