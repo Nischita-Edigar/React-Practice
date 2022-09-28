@@ -15,7 +15,6 @@ import Binding from './EventBinding/Binding'
 import Employee from './ListRendering/Employee'
 import Form from './FormHandling/Form'
 import Registration from './FormHandling/Registration'
-import Navbar from './Routing/Version5/Navbar'
 
 let App=()=>{
     return <div>
@@ -50,9 +49,7 @@ let App=()=>{
     <Form/><hr></hr>
     <h1>Registration Form</h1>
     <Registration/><hr></hr>
-    <h1>React Routing</h1>
-    <Navbar/>
-
+   
     
 
 

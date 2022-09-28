@@ -11,7 +11,7 @@ class Cart extends React.Component{
     minushandler=()=>{
         if(this.state.qty===0){
             this.setState({qty:0})
-            alert("Quantity cant receed 0")
+            alert("Quantity should be atleast one to place order")
         }
         else{
             this.setState({qty:this.state.qty-1})
