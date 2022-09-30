@@ -26,17 +26,18 @@ export class Example1 extends Component {
         <pre>{JSON.stringify(this.state)}</pre>
         <button id='change'  className="btn btn-warning"onClick={this.getUserData}>Get User Data</button>
          {this.state.users.length>0 ? <>
-         <table className='table table-hover' border='2'>
-          <thead>
+         <table className='table table-hover' border='1'>
+          <thead><tr>
             <th>Name
             </th>
             <th>id</th>
             <th>email</th>
+            </tr>
           </thead>
           <tbody>
             {this.state.users.map((user)=>{
               return(
-                <tr>
+                <tr key={user.id}>
                   <td>{user.name}</td>
                   <td>{user.id}</td>
                   <td>{user.email}</td>
